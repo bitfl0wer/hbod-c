@@ -17,6 +17,7 @@ int bin_to_dec(int bin) {
     size_t length_str = strlen(str);
     for (size_t count = 0; count < length_str; count++) {
         int current = str[count];
+        // Return with -1 if input is not a binary number
         if (current != 0 && current != 1) {
             return -1;
         }
