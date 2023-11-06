@@ -5,6 +5,8 @@
 
 uint64_t *genbintable(char *binary);
 
+// FIXME: Big binary numbers (>~32 bit length) cause some sort of overflow.
+
 uint64_t bin_to_dec(char *bin) {
     size_t length_str = strlen(bin);
     uint64_t *bintable = genbintable(bin);
